@@ -17,11 +17,14 @@ public class SetInterface {
         hset1.add("kobe");
         hset1.add("Kaksho");
         hset1.add("tobi");
+        //Union of two sets
         hset.addAll(hset1);
         System.out.println("Union of two hash set" + hset);
-        //Takes common values from two sets
+        //Intersection of two sets
+        //commen the addAll and run to get correct result
         hset.retainAll(hset1);
         System.out.println("Intersection of two hash set" + hset);
+        //gets values that are not present in two sets
         hset.removeAll(hset1);
         System.out.println("Difference of two hash set" + hset);
         for(String s : hset){
